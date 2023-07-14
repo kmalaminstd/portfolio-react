@@ -1,0 +1,108 @@
+.nav{
+    background-color: #fff;
+    padding: 8px 15px;
+    width: 95%;
+    margin: 20px 2.5%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    overflow: hidden;
+    position: fixed;
+}
+
+.nav .logo{
+    width: 40%;
+    float: left;
+}
+
+.nav .logo h3{
+    font-family: "Chela One";
+    font-size: 25px;
+}
+
+.nav .links{
+    width: 60%;
+    float: right;
+}
+
+.nav .links ul {
+    list-style-type: none;
+    float: right;
+}
+
+.nav .links ul li{
+    display: inline-block;
+}
+
+.nav .links ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 8px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+.nav .links ul li a::after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background-color: yellowgreen;
+    display: block;
+}
+
+.nav .links ul li a:hover::after{
+    width: 100%;
+    transition: 0.3s linear;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -ms-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+}
+
+.linkBars{
+    display: none;
+    float: right;
+    padding: 8px 15px;
+}
+
+
+@media only screen and (max-width: 768px){
+    .links{
+        display: block;
+        width: 100%;
+        height: 0px;
+        transition: 0.5s linear;
+        -webkit-transition: 0.5s linear;
+        -moz-transition: 0.5s linear;
+        -ms-transition: 0.5s linear;
+        -o-transition: 0.5s linear;
+    }
+
+    .nav .links ul{
+        width: 100%;
+
+    }
+
+    .openNav{
+        height: 100%;
+        transition: 0.5s linear;
+        -webkit-transition: 0.5s linear;
+        -moz-transition: 0.5s linear;
+        -ms-transition: 0.5s linear;
+        -o-transition: 0.5s linear;
+}
+
+    .nav .links ul li{
+        display: block;
+        width: 100%;
+        text-align: right;
+        border-bottom: 0.5px solid lightgreen;
+    }
+
+    .linkBars{
+        display: block;
+    }
+}
