@@ -1,9 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
     <div className="footer">
-      <p><i>Portfolio by <b>K.M. AL-AMIN</b></i></p>
+      <p>Portfolio by <i><b><Link target="_blank" to="https://github.com/kmalaminstd">K.M. AL-AMIN</Link></b></i></p>
     </div>
   )
 }
