@@ -90,3 +90,289 @@
 }
 
 /* banner area css end */
+
+/* counter area css start */
+
+.counter{
+    background-color: #fff;
+    width: 90%;
+    margin: 30px auto;
+    padding: 30px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.counter .singleCounter{
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    border: 1px solid lightcoral;
+    border-top-right-radius: 15px;
+    width: 25%;
+    height: auto;
+}
+
+.singleCounter:hover{
+    background-color: lightcoral;
+    color: #fff;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    box-shadow: 2px 1px 8px 3px lightgray;
+}
+
+.singleCounter .icon{
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    background-color: lightcoral;
+    font-size: 30px;
+    position: absolute;
+    top: -19px;
+    color: lightgreen;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.singleCounter .counterNumber{
+    margin-top: 30px;
+}
+
+.singleCounter .counterNumber h4{
+    font-size: 50px;
+}
+
+.singleCounter .counterName{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.singleCounter .counterName p{
+    font-size: 25px;
+}
+
+/* counter area css end */
+
+/* featurePort area css start */
+
+.featurePort{
+    background-color: #fff;
+    width: 90%;
+    padding: 30px 20px;
+    margin: 0 auto;
+}
+
+.featurePort .portBtn{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    width: 100%;
+}
+
+.featurePort .portBtn button{
+    padding: 4px 15px;
+    background-color: lightgreen;
+    font-weight: bold;
+    border: 1px solid lightgreen;
+    outline: none;
+    font-size: 18px;
+}
+
+.featurePort .heading{
+    text-align: center;
+    margin: 40px 0;
+}
+
+.featurePort .heading h2{
+    font-size: 30px;
+}
+
+.featurePort .heading h2::after{
+    content: '';
+    height: 2px;
+    width: 200px;
+    margin: 20px auto;
+    display: block;
+    background-color: orange;
+}
+
+.portfolioList {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.featurePort .singleFeaturePort{
+    width: 30%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.singleFeaturePort .image{
+    height: 400px;
+    width: 100%;
+}
+
+.singleFeaturePort .image img{
+    height: 100%;
+    width: 100%;
+    border: 2px solid lightcoral;
+}
+
+.overlayCard{
+    background-color: lightcoral;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: -100%;
+    padding: 20px;
+}
+
+.singleFeaturePort:hover{
+    box-shadow: 2px 3px 6px 2px lightgray;
+}
+
+.singleFeaturePort:hover .overlayCard{
+    left: 0%;
+    transition: 0.5s linear;
+    -webkit-transition: 0.5s linear;
+    -moz-transition: 0.5s linear;
+    -ms-transition: 0.5s linear;
+    -o-transition: 0.5s linear;
+    opacity: 0.98;
+    
+}
+
+.overlayCard .name{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    color: #fff;
+}
+
+.overlayCard .name h3{
+    font-size: 24px;
+}
+
+.overlayCard .name h3::after{
+    content: '';
+    background-color: orange;
+    height: 2px;
+    width: 100%;
+    display: block;
+}
+
+.overlayCard .postDetails{
+    margin: 30px auto 0 auto;
+    border: 1px solid lightgray;
+    padding: 3px 8px;
+    width: 40%;
+    text-align: center;
+}
+
+.overlayCard .postDetails a{
+    font-size: 20px;
+    color: teal;
+}
+
+.overlayCard .link{
+    margin: 30px auto 0 auto;
+    border: 1px solid lightgray;
+    padding: 3px 8px;
+    width: 60%;
+    text-align: center;
+}
+
+.overlayCard .link a{
+    font-size: 20px;
+    color: teal;
+}
+
+/* featurePort area css end */
+
+
+ /* ===================  =================== > */
+
+/* responsive part start */
+
+/* banner responsive start*/
+
+@media only screen and (max-width: 768px){
+    .counter .singleCounter{
+        width: 40%;
+    }
+
+    .counter .singleCounter:last-child{
+        margin-top: 40px;
+    }
+
+    .featurePort .singleFeaturePort{
+        width: 45%;
+    }
+
+    .featurePort .singleFeaturePort:last-child{
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .banner{
+        width: 100%;
+    }
+
+    .banner .coverPhoto{
+        height: 160px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .banner .coverPhoto{
+        height: 130px;
+    }
+
+    .counter .singleCounter{
+        width: 95%;
+    }
+
+    .counter .singleCounter{
+        margin-top: 40px;
+    }
+
+    .featurePort .singleFeaturePort{
+        width: 98%;
+        margin-top: 30px;
+    }
+
+    .bigTyper{
+        padding-left: 10%;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .banner .coverPhoto{
+        height: 100px;
+    }
+
+    .bigTyper{
+        padding-left: 5%;
+    }
+
+    .bigTyper h5{
+        font-size: 20px;
+    }
+}
+
+/* banner responsive end */
+
+
+
+/* responsive part end */

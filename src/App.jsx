@@ -2,6 +2,7 @@ import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom"
 import Nav from './components/shared/Nav'
 import Footer from './components/shared/Footer'
 import Home from './pages/Home'
+import Portfolio from './pages/Portfolio'
 
 const DynaLayout = ()=>{
     return(
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Home />
+            },
+            {
+                path: 'portfolio',
+                element: <Portfolio />
             }
         ]
     }

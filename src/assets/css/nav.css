@@ -10,6 +10,16 @@
     -o-border-radius: 5px;
     overflow: hidden;
     position: fixed;
+    z-index: 999;
+}
+
+.changeColor{
+    background-color: lightgreen;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
 }
 
 .nav .logo{
@@ -18,7 +28,7 @@
 }
 
 .nav .logo h3{
-    font-family: "Chela One";
+    font-family: "Chela One" !important;
     font-size: 25px;
 }
 
@@ -43,6 +53,7 @@
     font-size: 18px;
     font-weight: bold;
     color: #000;
+    font-family: "Chela One" !important;
 }
 
 .nav .links ul li a::after{
@@ -104,5 +115,34 @@
 
     .linkBars{
         display: block;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .nav .logo h3{
+        font-size: 20px;
+    }
+
+    .nav .links{
+        padding-top: 10px;
+    }
+
+    .nav .links ul li a{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .nav .logo h3{
+        padding-top: 10px;
+        font-size: 15px;
+    }
+
+    .nav .links ul li a{
+        font-size: 13px;
+    }
+
+    .nav .links{
+        padding-top: 20px;
     }
 }
