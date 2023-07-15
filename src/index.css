@@ -5,3 +5,77 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+
+/* banner area css start */
+
+.banner{
+    background-color: #fff;
+    width: 700px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 0 auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.banner .coverPhoto{
+    width: 100%;
+    height: 180px;
+}
+
+.banner .coverPhoto img{
+    width: 100%;
+    height: 100%;
+}
+
+.banner .singlePhoto{
+    border: 2px solid lightgreen;
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    margin: -50px auto 0 auto;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    padding: 5px;
+    z-index: 999;
+}
+
+.banner .singlePhoto .box1{
+    border: 2px solid lightgray;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    overflow: hidden;
+}
+
+.banner .singlePhoto img{
+    height: 100%;
+    width: 100%;
+}
+
+.tagHeader{
+    width: 100%;
+    text-align: center;
+    padding: 8px 0;
+}
+
+.bigTyper{
+    text-align: center;
+    padding-left: 30%;
+}
+
+.bigTyper h5{
+    padding: 8px 0;
+    text-align: center;
+    display: flex;
+    gap: 5px;
+    font-size: 25px;
+    font-weight: 200;
+}
+
+/* banner area css end */
