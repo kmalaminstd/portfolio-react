@@ -31,6 +31,20 @@ function Banner() {
               </span>
             </h5>
           </div>
+          <div className="singleBio">
+            <p>Hello there! I'm <b>K.M. AL-AMIN</b>, a passionate Web Designer and Full Stack React Developer with a flair for creating stunning and functional web experiences. 
+              <br />
+              <br />
+            I strive to craft engaging digital solutions that leave a lasting impact. I feel great in my ability to transform abstract concepts and ideas into visually appealing designs.  My experience in UI design allows me to create intuitive user interfaces.
+                  <br />
+                  <br />
+            I have honed my skills as a Full Stack React Developer, making me proficient in both front-end and back-end technologies.
+            On the server-side, I excel in building robust and secure back-end systems using Firebase and Strapi.
+            
+            <br /><br />
+            
+            I like to look forward to taking on new challenges and contributing to the ever-evolving landscape of web technology. </p>
+          </div>
         </div>
     </>
   )

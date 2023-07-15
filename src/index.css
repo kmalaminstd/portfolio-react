@@ -78,4 +78,15 @@
     font-weight: 200;
 }
 
+.banner .singleBio{
+    width: 80%;
+    margin: 17px auto;
+}
+
+.banner .singleBio p{
+    text-align: justify;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
 /* banner area css end */
