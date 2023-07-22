@@ -1,6 +1,7 @@
 import React from 'react'
 import Typewriter from 'typewriter-effect'
 import { bannerPhoto, alamin } from '../../assets/images'
+import { Link, NavLink } from 'react-router-dom'
 
 function Banner() {
   return (
@@ -44,6 +45,10 @@ function Banner() {
             <br /><br />
             
             I like to look forward to taking on new challenges and contributing to the ever-evolving landscape of web technology. </p>
+          </div>
+
+          <div className="hireBtn" style={{textAlign: "center"}}>
+            <button><Link to="hire">Hire Me</Link></button>
           </div>
         </div>
     </>

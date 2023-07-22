@@ -46,8 +46,8 @@ function Nav() {
             <ul>
               <li onClick={()=>setToggle(false)}><Link to="/">Home</Link></li>
               <li onClick={()=>setToggle(false)}><Link to="portfolio">Portfolio</Link></li>
-              <li onClick={()=>setToggle(false)}><Link to="">Link</Link></li>
-              <li onClick={()=>setToggle(false)}><Link to="">Link</Link></li>
+              <li onClick={()=>setToggle(false)}><Link to="contact">Contact</Link></li>
+              <li onClick={()=>setToggle(false)}><Link to="hire">Hire Me</Link></li>
             </ul>
           
         </div>

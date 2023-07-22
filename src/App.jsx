@@ -4,6 +4,8 @@ import Footer from './components/shared/Footer'
 import Home from './pages/Home'
 import Portfolio from './pages/Portfolio'
 import { ScrollRestoration } from "react-router-dom"
+import Contact from "./pages/Contact"
+import Hire from "./pages/Hire"
 
 const DynaLayout = ()=>{
     return(
@@ -29,6 +31,14 @@ const router = createBrowserRouter([
             {
                 path: 'portfolio',
                 element: <Portfolio />
+            },
+            {
+                path: 'contact',
+                element: <Contact />
+            },
+            {
+                path: "hire",
+                element: <Hire />
             }
         ]
     }

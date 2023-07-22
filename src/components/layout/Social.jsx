@@ -1,8 +1,13 @@
 import React from 'react'
 import {BsFacebook, BsGithub, BsTwitter} from 'react-icons/bs'
-import { Link } from 'react-router-dom'
+import {AiOutlineMail} from 'react-icons/ai'
+import { Link, useLocation } from 'react-router-dom'
 
 function Social() {
+
+    const location = useLocation()
+    const targetLocation = location.pathname.slice(1, location.pathname.length)
+
   return (
     <>
         <div className="social">
@@ -42,6 +47,21 @@ function Social() {
                         </div>
                     </Link>
                 </div>
+
+                {
+                    targetLocation === 'contact' ? 
+                        <div className="socialBox">
+                            <Link onClick={()=>window.location = "mailto: alaminkhanstd@gmail.com"}>
+                                <div className="socialIcon">
+                                    <AiOutlineMail />
+                                </div>
+                                <div className="socialName">
+                                    <p>Email Me</p>
+                                </div>
+                            </Link>
+                        </div> : ''
+                }
+
 
             </div>
         </div>
