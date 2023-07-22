@@ -600,6 +600,76 @@
 
 /* contact page css end */
 
+/* hire page css start */
+
+.hireDiv{
+    background-color: #fff;
+    width: 90%;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.hireIntro{
+    width: 70%;
+    margin: 30px auto;
+}
+
+.hireIntro h3{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.hireIntro p{
+    line-height: 23px;
+}
+
+.resumeLink{
+    width: 100%;
+    text-align: center;
+}
+
+.resumeLink button{
+    font-size: 18px;
+    padding: 8px 15px;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.hireLink{
+    padding-top: 30px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.hireLink h4{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.hireLink .box{
+    width: 100%;
+    border: 2px solid green;
+    background-color: #1DBF73;
+}
+
+.hireLink .box a{
+    display: flex;
+    align-items: center;
+}
+
+.hireLink .box a .icon{
+    font-size: 40px;
+}
+
+.hireLink .box .iconName{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* hire page css end */
+
 
  /* ===================  =================== > */
 
@@ -702,6 +772,14 @@
     .messageOption h3{
         font-size: 26px;
     }
+
+    .hireLink .box a .icon {
+        font-size: 30px;
+    }
+
+    .hireLink .box .iconName {
+        font-size: 20px;
+    }
 }
 
 @media only screen and (max-width: 320px){
@@ -725,6 +803,10 @@
 
     .bigTyper h5{
         font-size: 18px;
+    }
+
+    .hireLink{
+        width: 100%;
     }
 }
 
