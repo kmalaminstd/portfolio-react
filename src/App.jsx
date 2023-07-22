@@ -7,6 +7,7 @@ import { ScrollRestoration } from "react-router-dom"
 import Contact from "./pages/Contact"
 import Hire from "./pages/Hire"
 import { ToastContainer } from "react-toastify"
+import NotFound from "./pages/NotFound"
 
 const DynaLayout = ()=>{
     return(
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
             {
                 path: "hire",
                 element: <Hire />
+            },
+            {
+                path: "*",
+                element: <NotFound />
             }
         ]
     }
