@@ -300,6 +300,233 @@
 /* featurePort area css end */
 
 
+/* portfolio pages area css start */
+
+.portDiv{
+    width: 90%;
+    height: auto;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.portHeader{
+    margin: 30px 0;
+    padding-left: 40px;
+    padding-bottom: 10px;
+    width: 100%;
+    border-bottom: 0.8px solid lightgray;
+}
+
+.portHeader h2{
+    font-size: 30px;
+}
+
+.portCards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px 0;
+    
+}
+
+.portfolioCard{
+    width: 31%;
+    overflow: hidden;
+    margin-top: 20px;
+    box-shadow: 1px 1px 12px 3px lightgray;
+    position: relative;
+}
+
+.portfolioCard a{
+    display: block;
+    width: 100%;
+}
+
+.portfolioCard:hover{
+    box-shadow: 1px 1px 3px 3px lightgray;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.portfolioCard .portfolioImage{
+    width: 100%;
+    height: 300px;
+}
+
+.portfolioCard .portfolioImage img{
+    width: 100%;
+    height: 100%;
+}
+
+.portfolioCard .portfilioTitle{
+    padding: 10px 15px;
+}
+
+.portfolioCard .portfilioTitle h5{
+    font-size: 20px;
+}
+
+.portfolioCard .portfilioTitle h5 span{
+    font-size: 15px;
+    font-weight: normal; 
+}
+
+.tagMark{
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: lightgreen;
+    width: fit-content;
+    font-size: 18px;
+    padding: 8px 15px;
+    font-weight: 400;
+    border-top-left-radius: 10px;
+}
+
+.skill{
+    width: 90%;
+    margin: 30px auto;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.skill .skillHeader{
+    border-bottom: 0.8px solid lightgray;
+}
+
+.skill .skillHeader h2{
+    padding-bottom: 8px;
+    font-size: 30px;
+    padding-left: 20px;
+}
+
+.allSkills{
+    width: 100%;
+    margin: 25px 0;
+}
+
+.allTech{
+    margin: 30px auto;
+    width: fit-content;
+    background-color: lightgreen;
+    padding: 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.allTechBox{
+    background-color: #000;
+    padding: 8px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    display: flex;
+}
+
+.allTechBox .img{
+    font-size: 40px;
+    color: lightgreen;
+    display: flex;
+    align-items: center;
+}
+
+.allTechBox .name {
+    display: flex;
+    align-items: center;
+}
+
+.allTechBox .name p{
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    padding-left: 8px;
+}
+
+
+
+.allSkills h3{
+    text-align: center;
+}
+
+.technologyDiv{
+    width: 100%;
+    padding-left: 40px;
+    margin-top: 40px;
+}
+
+.technologyDiv .techHead h5{
+    font-size: 20px;
+}
+
+
+/* portfolio pages area css end */
+
+/* social area css start */
+
+.social{
+    width: 90%;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.social h2{
+    font-size: 30px;
+    border-bottom: 0.8px solid lightgray;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+.allSocials{
+    margin: 30px auto;
+    display: flex;
+    width: fit-content;
+    flex-wrap: wrap;
+}
+
+.allSocials .socialBox:nth-child(1){
+    background-color: #3b5998;
+}
+
+.allSocials .socialBox:nth-child(2){
+    background-color: #171515;
+}
+
+.allSocials .socialBox:nth-child(3){
+    background-color: #00acee;
+}
+
+.allSocials .socialBox a{
+    display: flex;
+    padding: 10px;
+    font-size: 40px;
+}
+
+.allSocials .socialBox .socialIcon{
+    color: #fff;
+    margin-right: 10px;
+}
+
+.allSocials .socialBox .socialName{
+    color: #fff;
+}
+
+/* social area css end */
+
+
  /* ===================  =================== > */
 
 /* responsive part start */
@@ -321,6 +548,11 @@
 
     .featurePort .singleFeaturePort:last-child{
         margin-top: 30px;
+    }
+
+    .portfolioCard{
+        width: 48%;
+        margin-top: 40px;
     }
 }
 
@@ -355,6 +587,26 @@
     .bigTyper{
         padding-left: 10%;
     }
+
+    .portfolioCard{
+        width: 98%;
+    }
+
+    .portfolioCard:first-child{
+        margin-top: 10px;
+    }
+
+    .portHeader{
+        margin-bottom: 0px;
+    }
+
+    .portHeader h2 {
+        font-size: 24px;
+    }
+
+    .tagMark {
+        font-size: 15px;
+    }
 }
 
 @media only screen and (max-width: 320px){
@@ -368,6 +620,16 @@
 
     .bigTyper h5{
         font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    .bigTyper{
+        padding-left: 3%;
+    }
+
+    .bigTyper h5{
+        font-size: 18px;
     }
 }
 

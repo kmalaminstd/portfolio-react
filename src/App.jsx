@@ -3,11 +3,13 @@ import Nav from './components/shared/Nav'
 import Footer from './components/shared/Footer'
 import Home from './pages/Home'
 import Portfolio from './pages/Portfolio'
+import { ScrollRestoration } from "react-router-dom"
 
 const DynaLayout = ()=>{
     return(
         <>
             <Nav />
+            <ScrollRestoration />
             <div style={{paddingTop: "100px"}}></div>
             <Outlet />
             <Footer />
