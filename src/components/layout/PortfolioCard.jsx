@@ -2,10 +2,12 @@ import React from 'react'
 import { portPicOne } from '../../assets/images'
 import { Link, useNavigate } from 'react-router-dom'
 
-function PortfolioCard() {
+function PortfolioCard({elm}) {
     // const navigateLive = (liveLink)=>{
     //     <Link to={liveLink}></Link>
     // }
+
+    console.log(elm);
     
   return (
     <>
@@ -13,7 +15,7 @@ function PortfolioCard() {
         <div className="portfolioCard">
             <Link to={"https://kmalaminstd.github.io/FilterFoodMenu/"} target="_blank">
                 <div className="tagMark">
-                    <p>With Javascript</p>
+                    <p>With {elm && elm.details.tag}</p>
                 </div>
                 <div className="portfolioImage">
                     <img src={portPicOne} alt="" />

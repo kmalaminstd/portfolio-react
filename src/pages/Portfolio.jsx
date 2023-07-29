@@ -1,8 +1,27 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import PortfolioCard from '../components/layout/PortfolioCard'
 import { Link } from 'react-router-dom'
+import {  onSnapshot } from "firebase/firestore";
+import { portFolioColRef } from '../config/firebase.config'
 
 function Portfolio() {
+  const [portfolio, setPortfolio] = useState(null)
+
+  useEffect(()=>{
+    const unsubscirbe = onSnapshot(portFolioColRef, snapshots=> {
+      const allPortfolio = snapshots.docs.map(elm => {
+        return{
+          id: elm.id,
+          ...elm.data()
+        }
+      })
+      setPortfolio(allPortfolio)
+    })
+    return ()=>{
+      unsubscirbe()
+    }
+  },[])
+
   return (
     <>
       <div className="portDiv">
@@ -12,9 +31,15 @@ function Portfolio() {
         </div>
 
         <div className="portCards">
-          <PortfolioCard />
-          <PortfolioCard />
-          <PortfolioCard />
+          {
+            portfolio && 
+            (
+              portfolio.map((elm, i) => <PortfolioCard key={i} elm={elm} />
+              )
+            )
+          }
+          
+          
         </div>
 
 
@@ -23,7 +48,7 @@ function Portfolio() {
         </div>
 
         <div className="portCards">
-          <PortfolioCard />
+          <h3>Will be update soon</h3>
         </div>
 
       </div>
